@@ -1,0 +1,313 @@
+.linetimebackground {
+	width: 100%;
+	height: 100%;
+	z-index: -4;
+	position: relative;
+}
+
+.biblia,.hierba,.cruz {
+	z-index: -5;
+	position: absolute;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.biblia {
+	background-image: url('../img/biblia.png');
+	width: 180px;
+	height: 167px;
+	top: -157px;
+	left: -105px;
+	transform: rotate(29deg);
+}
+
+.hierba {
+	background-image: url('../img/hojas.png');
+	width: 125px;
+	height: 234px;
+	top: -87px;
+	left: -60px;
+}
+
+.cruz {
+	background-image: url('../img/cruz.png');
+	width: 130px;
+	height: 292px;
+	top: 423px;
+	right: 0px;
+}
+
+.contentlinetime {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0fr 0fr 0fr 0fr;
+	gap: 80px 0px;
+	grid-template-areas:
+		"pone pone pone pone"
+		"ptwo ptwo ptwo ptwo"
+		"pthree pthree pthree pthree"
+		"pfour pfour pfour pfour";
+}
+
+section#milagros {
+    position: relative;
+}
+
+.pone {
+	grid-area: pone;
+}
+
+.ptwo {
+	grid-area: ptwo;
+}
+
+.pthree {
+	grid-area: pthree;
+}
+
+.pfour {
+	grid-area: pfour;
+}
+
+h2 {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 400;
+	color: white;
+	font-size: 2.0rem;
+	text-align: center;
+	padding: 0px 8px 0px 8px;
+}
+#milagros img {
+    width: 50%;
+}
+.ornament {
+	width: 20px;
+	height: 22px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url('../icon/ornament.svg');
+}
+
+.tittleh2>.ornament:last-of-type {
+	transform: scaleX(-1);
+}
+
+section#linetime {
+	position: relative;
+	top: 190px;
+	z-index: -2;
+	min-width: 320px;
+}
+
+.tittleh2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin-bottom: 26px;
+}
+
+.punto {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: white;
+	margin-left: 1.45px;
+}
+
+.pone, .ptwo, .pthree, .pfour, .pfive, #milagros p, #dones p {
+	margin-left: 40px;
+	margin-right: 35px;
+	text-align: justify;
+}
+
+h3 {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2.8rem;
+	text-align: center;
+	margin: 25px 0px 30px 0px;
+}
+
+.puntoyaño {
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    right: 18px;
+}
+
+.puntoyaño {
+	display: flex;
+	flex-direction: row;
+	width: 70px;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	right: 18px;
+}
+
+.ptwo .puntoyaño {
+	top: -40px;
+}
+
+.puntoyaño:nth-child(2) {
+	position: absolute;
+	top: 408px;
+}
+
+.puntoyaño:nth-child(3) {
+	position: absolute;
+	top: 809px;
+}
+
+.puntoyaño:nth-child(4) {
+	position: absolute;
+	top: 1138px;
+}
+
+.pone .puntoyaño {
+	top: 10px;
+}
+
+.pthree .puntoyaño {
+	top: -40px;
+}
+
+.pfour .puntoyaño {
+	top: -38px;
+}
+
+.pfour h3 {
+	margin-top: -10px;
+}
+
+section#santiprocess {
+    min-width: 320px;
+    position: relative;
+    top: 235px;
+}
+
+.contentlinetime, #santiprocess, #milagros p {
+    font-family: 'Quattrocento';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.pfive {
+    margin-bottom: 60px;
+}
+
+#santiprocess .puntoyaño {
+    margin-bottom: 22px;
+}
+
+.rose {
+	background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	    background-image: url('../img/rosa.png');
+	    width: 99px;
+	    height: 291px;
+	    position: absolute;
+	    right: 0;
+	    top: -67px;
+	    z-index: -12;
+}
+
+h4 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-align: center;
+    width: 311px;
+    margin: 0 auto;
+    color: white;
+    margin-bottom: 50px;
+}
+figure {
+    text-align: center;
+    margin: 40px 0px;
+    position: relative;
+    z-index: 3;
+}
+#milagros div.psix p:nth-of-type(2) {
+    color: #959595;
+    font-weight: 800;
+    margin-top: 30px;
+}
+.margaritas, .menta, .yflowersone, .yflowers, .leaves, .girasoles, .rose, .biblia, .cruz, .hierba{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	z-index: -28;
+}
+
+.margaritas{
+	width: 100px;
+	height: 245px;
+	background-image: url('../img/whiteflowers.png');
+	top: 505px;
+	position: absolute;
+}
+.menta{
+	width: 100px;
+	height: 245px;
+	background-image: url('../img/leaves.png');
+	right: 0;
+	top: 135px;
+	position: absolute;
+}
+
+.yflowersone{
+	width: 55px;
+	height: 175px;
+	background-image: url('../img/yflowersone.png');
+	top: 670px;
+	position: absolute;
+}
+.yflowers{
+	width: 63px;
+	height: 195px;
+	background-image: url('../img/yflowers.png');
+	right: 0;
+	top: 780px;
+}
+.leaves {
+    width: 80px;
+    height: 315px;
+    position: relative;
+    background-image: url('../img/lastleaves.png');
+    top: -186px;
+}
+section#dones {position: relative;top: -280px;}
+.girasoles{
+	width: 106px;
+	height: 290px;
+	position: relative;
+	background-image: url('../img/girasoles.png');
+	top: -207px;
+}
+li {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
+h5 {
+    font-size: 3.8rem;
+    font-weight: 500;
+		margin-bottom: 15px;
+}
+#dones p {
+    margin-bottom: 40px;
+}

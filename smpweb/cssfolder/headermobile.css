@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    z-index: -17;
+}
+
+:root {
+  --marronguinda: #6A2929;
+}
+
+html{
+  font-size: 62.5%;
+  background-color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  min-width: 320px;
+  position: fixed;
+  border-bottom: 1px solid white;
+  z-index: 10;
+}
+
+.header-left {
+}
+
+#slider-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-image: url('../icon/slidericon.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 14px;
+  margin-left: 18px;
+}
+
+.slider {
+  position: fixed;
+  left: -300px;
+  top: 50px;
+  width: 300px;
+  height: 100vh;
+  background-color: #0000002b;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  backdrop-filter: blur(25px);
+  border-right: 1px solid white;
+}
+
+.slider-content-1,
+.slider-content-2 {display: flex;flex-direction: column;align-items: center;}
+
+.slider-content-1 div,
+.slider-content-2 div {
+  margin-bottom: 10px;
+}
+
+.logoheader {
+  background-image: url(../icon/logo.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 126px;
+  height: 33px;
+}
+.tittleh2 h2 {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.tittleh2 .ornament {
+    margin-bottom: 0px;
+}
+.msm{
+  background-image: url('../icon/msjicon.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 18px;
+}
+
+.wsp{
+  background-image: url('../icon/iconwsp.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 22px;
+}
+
+.slider-open {
+  left: 0;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+  width: 52px;
+}
+
+.header-right div {
+  padding: 10px;
+  background-color: #555;
+}
+.slider-content-1 a {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    display: flex;
+    text-decoration: none;
+    font-size: 2.5rem;
+    justify-content: center;
+    border: 1px white solid;
+    padding: 2% 0;
+    width: 85%;
+    margin-bottom: 23px;
+    border-bottom: solid 4px;
+    z-index: 1;
+    background-color: #0000004a;
+}
+.slider-content-1 .tittleh2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.roseslide{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../img/redrose.png');
+  width: 375px;
+  height: 266px;
+  position: absolute;
+  bottom: 0;
+  left: -182px;
+}

@@ -1,0 +1,135 @@
+main{
+  top: 50px;
+  position: relative;
+  min-width: 320px;
+  width: 100%;
+  height: 608px;
+  background-image: url('../img/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.maincontent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0fr 1fr 1fr 1fr 0fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "maintext maintext maintext"
+    "maintext maintext maintext"
+    "mainimg mainimg mainimg"
+    "mainimg mainimg mainimg"
+    "mainimg mainimg mainimg"
+    "maininfo maininfo maininfo";
+  width: 100%;
+  height: 100%;
+}
+
+.maintext {
+  grid-area: maintext;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+    font-family: 'Pathway Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 0px var(--marronguinda);
+}
+
+.text p {
+    font-size: 2.4rem;
+    top: 3px;
+    position: relative;
+}
+
+h1 {
+    font-size: 4.7rem;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    bottom: 7px;
+    position: relative;
+}
+
+.text p:nth-child(2) {
+    font-size: 2.0rem;
+}
+
+.mainimg {
+  grid-area: mainimg;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.maininfo {
+  grid-area: maininfo;
+  background-color: #0000ff30;
+}
+
+.maintext a {display: none;}
+
+.angelone{
+  background-image: url('../img/angelone.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 247px;
+  height: 412px;
+  position: relative;
+  background-position-x: -20px;
+  left: 0;
+  top: 98px;
+}
+.angeltwo{
+  background-image: url('../img/angeltwo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 249px;
+  height: 535px;
+  background-position-x: 111px;
+  position: absolute;
+  z-index: 0;
+  top: -60px;
+  right: 0;
+}
+.sanmartin{
+  background-image: url('../img/sanmartin.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 710px;
+  max-width: 600px;
+  position: absolute;
+  top: -102px;
+  z-index: 1;
+}
+.maincontent a:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    z-index: 1;
+    background-color: #90674eb5;
+    color: #FBE7E7;
+    font-size: 4.6rem;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 100;
+    padding: 8px 20px 15px 20px;
+    text-shadow: 2px 3px 6px #0000008a;
+    box-shadow: 0px 7px 11px 0px #00000082;
+    letter-spacing: 1px;
+}
